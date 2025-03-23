@@ -7,7 +7,7 @@ app.use(express.json());
 
 // GET API - Returns a welcome message
 app.get('/api/welcome', (req, res) => {
-    res.json({ message: 'Welcome to our AWS CICD!', changes: "Master updated" });
+    res.json({ message: 'Welcome to our AWS CICD!', changes: "With AMAN AGAin" });
 });
 
 // POST API - Accepts JSON data and responds with it
