@@ -19,6 +19,11 @@ app.post('/api/data', (req, res) => {
     res.json({ message: 'Data received', data: { name, age } });
 });
 
+app.post('/api/aman', (req, res) => {
+    
+    res.json({ message: 'Yess!!, its working!' });
+});
+
 // Start the server
 // app.listen(PORT, () => {
 //     console.log(`Server is running on http://localhost:${PORT}`);
