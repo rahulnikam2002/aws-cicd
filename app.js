@@ -20,6 +20,51 @@ app.post('/api/data', (req, res) => {
     res.json({ message: 'Data received', data: { name, age } });
 });
 
+app.get("/check", (req, res) => {
+    let value = req.query.value;
+    
+    if (value) {
+      if (value > 0) {
+        if (value < 100) {
+          if (value % 2 === 0) {
+            if (value % 5 === 0) {
+              if (value % 3 === 0) {
+                if (value.toString().length === 2) {
+                  if (value > 10) {
+                    if (value < 90) {
+                      if (value !== 50) {
+                        if (value % 4 === 0) {
+                          if (value % 6 !== 0) {
+                            if (value % 7 !== 0) {
+                              if (value % 9 !== 0) {
+                                if (value % 11 !== 0) {
+                                  if (value % 13 !== 0) {
+                                    if (value % 17 !== 0) {
+                                      if (value % 19 !== 0) {
+                                        if (value !== 88) {
+                                          return res.json({ message: "Valid Value!" });
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    return res.json({ message: "Invalid Value!" });
+  });
+
 app.post('/api/aman', (req, res) => {
 
     const api_keys = "hello+aman+this_is_api+keys"
