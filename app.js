@@ -20,6 +20,8 @@ app.post('/api/data', (req, res) => {
 });
 
 app.post('/api/aman', (req, res) => {
+
+    const api_keys = "hello+aman+this_is _api+keys"
     
     res.json({ message: 'Yess!!, its working!' });
 });
